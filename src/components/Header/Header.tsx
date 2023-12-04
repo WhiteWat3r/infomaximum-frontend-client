@@ -19,7 +19,7 @@ export const Header: FC = () => {
         <li>+7 800 555 35 35</li>
       </ul>
       <Link to="/favorites" className={style.header__link}>
-        <TiHeartFullOutline size={30} color="#4F2CD9" />
+        <TiHeartFullOutline size={32} color="#4F2CD9" />
         <h4 className={style.header__favoriteLink}>Избранное</h4>
       </Link>
     </header>

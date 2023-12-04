@@ -8,6 +8,7 @@
   height: 70px;
   align-items: center;
   justify-content: space-between;
+  border-bottom: 1px solid $medium-grey;
 
   &__logo {
     margin-right: 21px;
@@ -25,7 +26,7 @@
     display: flex;
     gap: 31px;
     margin-left: auto;
-    max-width: 620px;
+    max-width: 615px;
     width: 100%;
     list-style: none;
     @include font-h4;
