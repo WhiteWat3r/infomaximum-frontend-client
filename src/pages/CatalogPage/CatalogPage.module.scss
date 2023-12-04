@@ -1,0 +1,21 @@
+@import '../../styles/abstract/constants.scss';
+@import '../../styles/abstract/mixins.scss';
+
+.catalog {
+  margin-bottom: 81px;
+
+  &__list {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    justify-content: flex-start;
+    column-gap: 20px;
+    margin-top: 43px;
+  }
+
+  &__sortingBlock {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}

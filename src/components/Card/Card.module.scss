@@ -1,0 +1,84 @@
+@import '../../styles/abstract/constants.scss';
+@import '../../styles/abstract/mixins.scss';
+
+.card {
+  width: 445px;
+  height: 498px;
+  display: flex;
+  flex-direction: column;
+  text-align: start;
+  z-index: 3;
+  position: relative;
+  margin-bottom: 73px;
+
+  &__image {
+    width: 445px;
+    height: 310px;
+    border-radius: 15px 15px 0px 0px;
+    border: $medium-grey 1px solid;
+    margin-bottom: 26px;
+
+    &_disabled {
+      opacity: 0.3;
+    }
+  }
+
+  &__overlay {
+    width: 445px;
+    height: 310px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    // background-color: black;
+    // opacity: 0.3;
+    // z-index: 1;
+  }
+
+  &__notification {
+    width: 237px;
+    height: 59px;
+    color: $white-standart;
+    background-color: $black-standart-text;
+    border-radius: 15px;
+    @include font-h3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &__name {
+    @include font-h3;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    max-width: 434px;
+  }
+
+  &__description {
+    color: $dark-grey;
+    @include font-body-regular;
+    display: flex;
+    gap: 14px;
+    margin-top: 12px;
+  }
+
+  &__price {
+    @include font-h4;
+    margin-top: 12px;
+  }
+
+  &__buttons {
+    display: flex;
+    margin-top: 20px;
+    align-items: center;
+    gap: 25px;
+  }
+
+  &__buttonContainer {
+    width: 254px;
+    height: 56px;
+  }
+}

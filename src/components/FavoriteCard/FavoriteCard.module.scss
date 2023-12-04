@@ -1,0 +1,67 @@
+@import '../../styles/abstract/constants.scss';
+@import '../../styles/abstract/mixins.scss';
+
+.card {
+  display: flex;
+  gap: 20px;
+  max-height: 308px;
+  padding-bottom: 22px;
+  border-bottom: 1px $medium-grey solid;
+  &__image {
+    border-radius: 15px;
+    border: 1px $medium-grey solid;
+  }
+
+  &__info {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
+
+  &__name {
+    @include font-h2;
+    color: $black-standart-text;
+  }
+
+  &__description {
+    @include font-body-regular;
+    color: $dark-grey;
+    max-width: 810px;
+    width: 100%;
+
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    height: auto;
+  }
+
+  &__year {
+    @include font-body-regular;
+    color: $dark-grey;
+  }
+  &__color {
+    @include font-body-regular;
+    color: $dark-grey;
+  }
+
+  &__price {
+    @include font-h3;
+    margin-top: 18px;
+  }
+
+  &__buttonsBlock {
+    display: flex;
+    gap: 20px;
+    margin-top: auto;
+  }
+
+  &__buttonContainer {
+    width: 259px;
+    height: 56px;
+  }
+}
+
+.card:last-child {
+    border: none;
+}

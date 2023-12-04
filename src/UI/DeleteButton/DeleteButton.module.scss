@@ -1,0 +1,19 @@
+.deleteButton {
+    border: none;
+    background-color: transparent;
+    padding: 0;
+    height: 57px;
+    width: 56px;
+    background-image: url('../../images/delete_default.svg');
+    background-repeat: no-repeat;
+    cursor: pointer;
+    background-position: center;
+  }
+  
+  .deleteButton:hover {
+    background-image: url('../../images/delete_hovered.svg');
+}
+
+.deleteButton:active {
+    background-image: url('../../images/delete_pressed.svg');
+}

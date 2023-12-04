@@ -1,0 +1,51 @@
+@import '../../styles/abstract/constants.scss';
+@import '../../styles/abstract/mixins.scss';
+
+.header {
+  margin: 0;
+  padding: 0 40px;
+  display: flex;
+  height: 70px;
+  align-items: center;
+  justify-content: space-between;
+
+  &__logo {
+    margin-right: 21px;
+  }
+
+  &__catalogButton:hover {
+    background-color: $third-blue;
+  }
+
+  &__catalogButton:active {
+    background-color: $fourth-blue;
+  }
+
+  &__contactBlock {
+    display: flex;
+    gap: 31px;
+    margin-left: auto;
+    max-width: 620px;
+    width: 100%;
+    list-style: none;
+    @include font-h4;
+  }
+
+  &__link {
+    display: flex;
+    text-decoration: none;
+    align-items: center;
+    color: $black-standart-text;
+    gap: 12px;
+    justify-content: flex-end;
+  }
+
+
+  &__favoriteLink {
+    @include font-h4;
+  }
+  &__navButton {
+    width: 135px;
+    height: 36px;
+  }
+}

@@ -1,0 +1,29 @@
+@import './../../styles/abstract/constants.scss';
+@import '../../styles/abstract/mixins.scss';
+
+.likeButton {
+    border: none;
+    background-color: transparent;
+    padding: 0;
+    height: 24px;
+    width: 26px;
+    background-image: url('../../images/like_default.svg');
+    background-size: 100%;
+    background-repeat: no-repeat;
+    cursor: pointer;
+    background-position: left;
+    &_disabled {
+      background-image: url('../../images/like_disabled.svg');
+      cursor: default;
+      pointer-events: none;
+    }
+
+    &_active {
+        background-image: url('../../images/like_pressed.svg');
+
+      }
+  }
+  
+  .likeButton:hover {
+    background-image: url('../../images/like_hovered.svg');
+}

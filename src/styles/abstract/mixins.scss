@@ -1,0 +1,42 @@
+@import './placeholders';
+@import './constants';
+
+@mixin font-h1 {
+    @extend %font-display;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 58px; 
+}
+
+@mixin font-h2 {
+    @extend %font-display;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 42px;
+}
+
+@mixin font-h3 {
+    @extend %font-display;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 28px;
+}
+
+@mixin font-h4 {
+    @extend %font-display;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 18px;
+}
+
+@mixin font-body-regular {
+    @extend %font-display;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 16px;
+}

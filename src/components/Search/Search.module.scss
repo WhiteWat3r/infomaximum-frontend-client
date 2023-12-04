@@ -1,0 +1,46 @@
+@import '../../styles/abstract/constants.scss';
+@import '../../styles/abstract/mixins.scss';
+
+.search {
+  position: relative;
+  width: 445px;
+  height: 35px;
+
+  &__input {
+    height: 36px;
+    padding: 4px 10px;
+    box-sizing: border-box;
+    width: 445px;
+    border: 1px solid $medium-grey;
+    border-radius: 5px;
+    padding-right: 28px;
+    @include font-body-regular;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+
+  &__input::placeholder {
+    color: $medium-grey;
+  }
+
+  &__button {
+    height: 24px;
+    width: 24px;
+    position: absolute;
+    right: 4px;
+    top: 6px;
+    background-color: none;
+    border: none;
+    cursor: pointer;
+    background-image: url('../../images/search_button.svg');
+  }
+
+  &__button:hover {
+    background-image: url('../../images/search_hovered.svg');
+  }
+
+  &__button:active {
+    background-image: url('../../images/search_pressed.svg');
+  }
+}

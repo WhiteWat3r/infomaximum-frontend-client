@@ -1,0 +1,48 @@
+@import '../../styles/abstract/constants.scss';
+@import '../../styles/abstract/mixins.scss';
+
+.sort {
+  position: relative;
+
+  &__button {
+    background-color: transparent;
+    color: $black-standart-text;
+    border: none;
+    cursor: pointer;
+    @include font-h4;
+    padding: 0;
+    display: flex;
+    gap: 12px;
+  }
+
+  &__options {
+    position: absolute;
+    height: 154px;
+    width: 204px;
+    top: 100%;
+    left: 0;
+    background-color: $white-standart;
+    list-style: none;
+    margin: 0;
+    z-index: 4;
+    @include font-body-regular;
+    color: $black-standart-text;
+    border: 1px $black-standart-text solid;
+  }
+
+  &__option {
+    cursor: pointer;
+    height: 22px;
+    padding-left: 4px;
+    display: flex;
+    align-items: center;
+  }
+
+  &__option:hover {
+    background-color: #1e8fff;
+  }
+
+  &__icon {
+    margin-right: 12px;
+  }
+}
